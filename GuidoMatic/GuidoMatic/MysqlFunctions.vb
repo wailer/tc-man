@@ -18,7 +18,7 @@ Module MysqlFunctions
         Dim SqlQuery As String
         Dim first_empty_guid As Integer
         Dim last_used_guid As Integer
-        Dim guid_to_reorder As Integer = 1
+        Dim next_empty_guid As Integer = 1
         Dim next_guid As Integer
         Dim FoundNextGuid As Boolean
         Const Max_Guid As Integer = 16777214
@@ -52,19 +52,19 @@ Module MysqlFunctions
         Do
 
             ' We check if guid is used or empty
-            SqlQuery = "SELECT guid FROM creature WHERE guid=?guid_to_reorder"
+            SqlQuery = "SELECT guid FROM creature WHERE guid=?next_empty_guid"
             Command.CommandText = SqlQuery
-            Command.Parameters.AddWithValue("?guid_to_reorder", guid_to_reorder)
+            Command.Parameters.AddWithValue("?next_empty_guid", next_empty_guid)
             QueryResult1 = Command.ExecuteScalar
             Command.Parameters.Clear()
 
 
             If QueryResult1 = 0 Then
-                first_empty_guid = guid_to_reorder
-                next_guid = guid_to_reorder + 1
+                first_empty_guid = next_empty_guid
+                next_guid = next_empty_guid + 1
                 QueryResult1 = Nothing
             Else
-                last_used_guid = guid_to_reorder
+                last_used_guid = next_empty_guid
                 QueryResult1 = Nothing
                 GoTo LoopEnd
             End If
@@ -142,11 +142,11 @@ Module MysqlFunctions
             End If
 
 LoopEnd:
-    
 
-            Progress = 100 * guid_to_reorder / 16777214
+
+            Progress = 100 * next_empty_guid / 16777214
             Main.ProgressCreatureGuids.Increment(Progress)
-            guid_to_reorder = guid_to_reorder + 1
+            next_empty_guid = next_empty_guid + 1
 
             conn.Close()
             conn.Dispose()
@@ -155,7 +155,7 @@ LoopEnd:
             Main.Refresh()
             Main.Update()
 
-        Loop Until (guid_to_reorder = Max_Guid) Or CancelReorderCreature
+        Loop Until (next_empty_guid = Max_Guid) Or CancelReorderCreature
 
 
 
