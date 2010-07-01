@@ -156,6 +156,18 @@ Public Class Main
                 Command.Parameters.AddWithValue("?next_guid", guid_to_reorder)
                 Command.ExecuteNonQuery()
                 Command.Parameters.Clear()
+                SqlQuery = "UPDATE pool_creature SET guid = ?first_empty_guid WHERE guid = ?next_guid"
+                Command.CommandText = SqlQuery
+                Command.Parameters.AddWithValue("?first_empty_guid", first_empty_guid)
+                Command.Parameters.AddWithValue("?next_guid", guid_to_reorder)
+                Command.ExecuteNonQuery()
+                Command.Parameters.Clear()
+                SqlQuery = "UPDATE game_event_creature SET guid = ?first_empty_guid WHERE guid = ?next_guid"
+                Command.CommandText = SqlQuery
+                Command.Parameters.AddWithValue("?first_empty_guid", first_empty_guid)
+                Command.Parameters.AddWithValue("?next_guid", guid_to_reorder)
+                Command.ExecuteNonQuery()
+                Command.Parameters.Clear()
                 Increment_ChangedGuids(1)
 
 
