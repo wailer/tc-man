@@ -1,0 +1,16 @@
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\bin\Release\TC-man.exe.manifest
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\bin\Release\TC-man.application
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\bin\Release\TC-man.exe
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\bin\Release\TC-man.pdb
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\bin\Release\TC-man.xml
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\bin\Release\MySql.Data.dll
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\GuidReorder.Form1.resources
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\GuidReorder.Main.resources
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\GuidReorder.Resources.resources
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\tc-man.vbproj.GenerateResource.Cache
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\TC-man.exe.manifest
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\TC-man.application
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\TC-man.exe
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\TC-man.xml
+C:\Users\Edu\Documents\Visual Studio 2008\Projects\GuidoMatic\GuidoMatic\obj\Release\TC-man.pdb

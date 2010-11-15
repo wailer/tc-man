@@ -79,6 +79,7 @@ Partial Class Form1
         '
         Me.txtPassword.Location = New System.Drawing.Point(128, 85)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(190, 20)
         Me.txtPassword.TabIndex = 5
         '
