@@ -227,4 +227,32 @@ LoopEnd:
     End Sub
 
  
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub bDuplicaItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Duplicate_Item()
+    End Sub
+
+    Private Sub tItemNuevaID_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub bDuplicaCreature_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bDuplicaCreature.Click
+        Duplicate_creature()
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Duplicate_Item()
+    End Sub
 End Class
