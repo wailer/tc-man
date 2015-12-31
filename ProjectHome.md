@@ -1,0 +1,1 @@
+A set of tools for TrinityCore, suitable for users, mostly aimed to provide an easy optimization interface to do the most common tasks that running TC for a long time may require.
